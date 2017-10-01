@@ -1,0 +1,21 @@
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\ResGen.read.1.tlog
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\ResGen.write.1.tlog
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\MySocketServer.Form1.resources
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\MySocketServer.Properties.Resources.resources
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\bin\Debug\Packet.dll
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\bin\Debug\Packet.pdb
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\SocketServer.exe
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketServer\obj\Debug\SocketServer.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\bin\Debug\Packet.dll
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\bin\Debug\Packet.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.csprojResolveAssemblyReference.cache
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\MySocketServer.Form1.resources
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\MySocketServer.Properties.Resources.resources
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.exe
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.pdb

@@ -1,0 +1,10 @@
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\Packet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\Packet\bin\Debug\Packet.dll
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\Packet\bin\Debug\Packet.pdb
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\Packet\obj\Debug\Packet.dll
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\Packet\obj\Debug\Packet.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\bin\Debug\Packet.dll
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\bin\Debug\Packet.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.csprojResolveAssemblyReference.cache
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.dll
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.pdb

@@ -1,0 +1,20 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Debug\BKSEmulator.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Debug\BKSEmulator.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Debug\BKSClientPacket.pdb
+E:\BKSClient\BKSEmulator\bin\Debug\BKSEmulator.exe
+E:\BKSClient\BKSEmulator\bin\Debug\BKSEmulator.pdb
+E:\BKSClient\BKSEmulator\bin\Debug\BKSClientPacket.dll
+E:\BKSClient\BKSEmulator\bin\Debug\BKSClientPacket.pdb
+E:\BKSClient\BKSEmulator\obj\Debug\ResolveAssemblyReference.cache
+E:\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.Form1.resources
+E:\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.Properties.Resources.resources
+E:\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.csproj.GenerateResource.Cache
+E:\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.exe
+E:\BKSClient\BKSEmulator\obj\Debug\BKSEmulator.pdb

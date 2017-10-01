@@ -1,0 +1,21 @@
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\ResGen.read.1.tlog
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\ResGen.write.1.tlog
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\MySocketClient.Form1.resources
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\MySocketClient.Properties.Resources.resources
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\bin\Debug\SocketClient.exe
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\bin\Debug\SocketClient.pdb
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\bin\Debug\Packet.dll
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\bin\Debug\Packet.pdb
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\SocketClient.exe
+C:\Users\aras\Documents\Visual Studio 2010\Projects\TCPaskaita\SocketClient\obj\Debug\SocketClient.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\bin\Debug\SocketClient.exe
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\bin\Debug\SocketClient.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\bin\Debug\Packet.dll
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\bin\Debug\Packet.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\MySocketClient.Form1.resources
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\MySocketClient.Properties.Resources.resources
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\SocketClient.csproj.GenerateResource.Cache
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\SocketClient.exe
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\SocketClient.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketClient\obj\Debug\SocketClient.csprojResolveAssemblyReference.cache

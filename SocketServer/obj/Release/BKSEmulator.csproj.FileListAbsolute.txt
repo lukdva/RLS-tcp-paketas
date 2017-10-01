@@ -1,0 +1,30 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSEmulator.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSEmulator.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.pdb
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSEmulator.exe
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSEmulator.pdb
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.dll
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.pdb
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\ResolveAssemblyReference.cache
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Form1.resources
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Properties.Resources.resources
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.csproj.GenerateResource.Cache
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.exe
+c:\Users\Agnius\Documents\Visual Studio 2008\Projects\BKSClient\BKSEmulator\obj\Release\BKSEmulator.pdb
+E:\BKSClient\BKSEmulator\bin\Release\BKSEmulator.exe
+E:\BKSClient\BKSEmulator\bin\Release\BKSEmulator.pdb
+E:\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.dll
+E:\BKSClient\BKSEmulator\bin\Release\BKSClientPacket.pdb
+E:\BKSClient\BKSEmulator\obj\Release\ResolveAssemblyReference.cache
+E:\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Form1.resources
+E:\BKSClient\BKSEmulator\obj\Release\BKSEmulator.Properties.Resources.resources
+E:\BKSClient\BKSEmulator\obj\Release\BKSEmulator.csproj.GenerateResource.Cache
+E:\BKSClient\BKSEmulator\obj\Release\BKSEmulator.exe
+E:\BKSClient\BKSEmulator\obj\Release\BKSEmulator.pdb

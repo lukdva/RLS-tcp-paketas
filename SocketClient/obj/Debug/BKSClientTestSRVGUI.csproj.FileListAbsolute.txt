@@ -1,0 +1,23 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestSRVGUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientTestGUI.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientTestGUI.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientPacket.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\HGW_DB_Interface.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientTestGUI\bin\Debug\HGW_DB_Interface.pdb
+E:\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientTestGUI.exe
+E:\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientTestGUI.pdb
+E:\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientPacket.dll
+E:\BKSClient\BKSClientTestGUI\bin\Debug\HGW_DB_Interface.dll
+E:\BKSClient\BKSClientTestGUI\bin\Debug\BKSClientPacket.pdb
+E:\BKSClient\BKSClientTestGUI\obj\Debug\ResolveAssemblyReference.cache
+E:\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.Form1.resources
+E:\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.Properties.Resources.resources
+E:\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestSRVGUI.csproj.GenerateResource.Cache
+E:\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.exe
+E:\BKSClient\BKSClientTestGUI\obj\Debug\BKSClientTestGUI.pdb

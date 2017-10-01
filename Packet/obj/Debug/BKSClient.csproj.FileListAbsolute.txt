@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\bin\Debug\BKSClient.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\bin\Debug\BKSClient.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\BKSClient.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\BKSClient.pdb

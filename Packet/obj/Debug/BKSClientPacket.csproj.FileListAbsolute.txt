@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\bin\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\bin\Debug\BKSClientPacket.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClient\obj\Debug\BKSClientPacket.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientPacket\bin\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientPacket\bin\Debug\BKSClientPacket.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientPacket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientPacket\obj\Debug\BKSClientPacket.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\BKSClient\BKSClientPacket\obj\Debug\BKSClientPacket.pdb
+E:\BKSClient\BKSClientPacket\bin\Debug\BKSClientPacket.dll
+E:\BKSClient\BKSClientPacket\bin\Debug\BKSClientPacket.pdb
+E:\BKSClient\BKSClientPacket\obj\Debug\ResolveAssemblyReference.cache
+E:\BKSClient\BKSClientPacket\obj\Debug\BKSClientPacket.dll
+E:\BKSClient\BKSClientPacket\obj\Debug\BKSClientPacket.pdb
