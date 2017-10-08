@@ -19,3 +19,15 @@ C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\MySocketServ
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.exe
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\obj\Debug\SocketServer.pdb
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\bin\Debug\SocketServer.exe.config
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\bin\Debug\Packet.dll
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\bin\Debug\Packet.pdb
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\MySocketServer.Form1.resources
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\MySocketServer.Properties.Resources.resources
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.exe
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.pdb

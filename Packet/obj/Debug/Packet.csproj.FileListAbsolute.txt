@@ -8,3 +8,9 @@ C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\bin\Debug\Packet.pdb
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.csprojResolveAssemblyReference.cache
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.dll
 C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\Packet\obj\Debug\Packet.pdb
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\bin\Debug\Packet.dll
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\bin\Debug\Packet.pdb
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\obj\Debug\Packet.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\obj\Debug\Packet.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\obj\Debug\Packet.dll
+C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\Packet\obj\Debug\Packet.pdb

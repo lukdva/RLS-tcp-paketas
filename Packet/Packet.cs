@@ -20,6 +20,7 @@ namespace Packets
         protected const byte PCK_END1 = (byte)0x44;
         protected const byte PCK_END2 = (byte)0x56;
         protected const byte PCK_END3 = (byte)0x41;
+        protected bool isNewPacket;
 
         protected byte PCK_SID;
         protected ushort PCK_SCNT;
@@ -286,7 +287,17 @@ namespace Packets
 
         public byte getPCK_ID()
         {
-            byte data = this.packet[6];
+            byte data = 0x00;
+            if (isNewPacket)
+                data = this.packet[9];
+            else
+                data = this.packet[6];
+            return data;
+        }
+
+        public byte getPCK_ID2()
+        {
+            byte data = this.packet[9];
             return data;
         }
 
