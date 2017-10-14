@@ -31,3 +31,4 @@ C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Deb
 C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.exe
 C:\Users\Lenovo yoga\Desktop\New folder (3)\RLS-tcp-paketas\SocketServer\obj\Debug\SocketServer.pdb
+C:\Users\Lukis\Desktop\TCPaskaita\TCPaskaita\SocketServer\bin\Debug\SocketServer.exe.config

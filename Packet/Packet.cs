@@ -28,7 +28,7 @@ namespace Packets
         private byte[] packet;
         private int idx;
 
-        public Packet()
+        public Packet(bool isNewPacket=false)
         {
             this.PCK_SIZE = (ushort)0x0000;
             this.PCK_CNT = (ushort)0x0000;
@@ -37,6 +37,7 @@ namespace Packets
             this.PCK_SID = (byte)0x00;
             this.PCK_SCNT = (ushort)0x0000;
             this.idx = 0;
+            this.isNewPacket = isNewPacket;
         }
 
         #region PACKETU GENERATORIAI
@@ -98,6 +99,8 @@ namespace Packets
 
         public void init_CLIENT_P4(ushort cnt, byte[] more_data)
         {
+            isNewPacket = true;
+
             ushort pck_size = (ushort)(9 + more_data.Length); //14 = e total
             const byte pck_id = (byte)0x07;
 
@@ -122,7 +125,7 @@ namespace Packets
             addByte((byte)PCK_END1);
             addByte((byte)PCK_END2);
             addByte((byte)PCK_END3);
-            updateCRCNew();
+            updateCRC();
         }
         #endregion
 
@@ -187,25 +190,39 @@ namespace Packets
             updateCRC();
         }
 
-        public void init_SERVER_P4(ushort cnt, byte pck_sid, ushort pck_scnt, byte[] more_data)
+        public void init_SERVER_P4(ushort cnt, byte pck_cid, ushort pck_ccnt, byte[] more_data)
         {
-            ushort pck_size = (ushort)(0x000d + more_data.Length);
+            isNewPacket = true;
+
+            ushort pck_size = (ushort)(13 + more_data.Length); //14 = e total
             const byte pck_id = (byte)0x08;
 
-            initPacket(pck_size + 4);
+            initPacket(pck_size + 6);  // 6 for start symbols + length field
             addByte((byte)PCK_START1);
             addByte((byte)PCK_START2);
-            addWord((ushort)pck_size);
-            addWord((ushort)cnt);
+
+            addWord((ushort)0x0000);
+            addWord((ushort)pck_size); // TODO smart way
+
+            addByte((byte)0x00);
+            addWord((ushort)cnt); // TODO smart way
+
+
             addByte((byte)pck_id);
-            addByte((byte)pck_sid);
-            addWord((ushort)pck_scnt);
+            addByte((byte)pck_cid);
+
+            addByte((byte)0x00);
+            addWord((ushort)pck_ccnt); //Clients count
+
             for (int i = 0; i < more_data.Length; i++)
             {
                 addByte((byte)more_data[i]);
             }
             addWord((ushort)0x0000);//crc
-            addByte((byte)PCK_END);
+
+            addByte((byte)PCK_END1);
+            addByte((byte)PCK_END2);
+            addByte((byte)PCK_END3);
             updateCRC();
 
 
@@ -271,7 +288,7 @@ namespace Packets
 
         public ushort getPCK_CNT()
         {
-            ushort data = bytes2word(this.packet[4], this.packet[5]);
+            ushort data = bytes2word(this.packet[isNewPacket? 7:4], this.packet[isNewPacket? 8:5]);
             return data;
         }
 
@@ -419,7 +436,7 @@ namespace Packets
             ushort index;
             byte b;
 
-            for (index = 4; index < this.packet.Length - 3; index++)
+            for (index = 4; index < this.packet.Length - (isNewPacket ? 5:3); index++)
             {
                 crc ^= ((ushort)((this.packet[index] << 8) & 0x0000ffff));
                 for (b = 0; b < 8; b++)
@@ -437,7 +454,7 @@ namespace Packets
         protected void updateCRC()
         {
             ushort crc = calcCRC();
-            addWordAt((ushort)crc, this.packet.Length - 3);
+            addWordAt((ushort)crc, this.packet.Length - (isNewPacket?5:3));
         }
 
         protected void updateCRCNew()

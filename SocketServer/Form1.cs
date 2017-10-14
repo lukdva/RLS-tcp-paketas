@@ -52,7 +52,7 @@ namespace MySocketServer
                 server.Start();
 
                 srvRunning = true;
-                this.listenThread = new Thread(accept_n_process);
+                this.listenThread = new Thread(accept_n_process2);
                 this.listenThread.Start();
 
                 this.button1.Enabled = false;
@@ -291,7 +291,6 @@ namespace MySocketServer
                     soc.NoDelay = true;
 
                     byte b = (byte)0x00;
-                    byte previousByte = (byte)0x00;
                     byte[] data = new byte[1];
                     int bytes = 0;
                     int counter = 0;
@@ -355,6 +354,7 @@ namespace MySocketServer
                                     break;
                                 }
                                 rxPacket[idx++] = b;
+                                counter = 0;
                                 rxState = RX_STATE.RX_DATA;
                                 break;
                             case RX_STATE.RX_DATA:
@@ -446,7 +446,7 @@ namespace MySocketServer
                     {
                         byte[] p = new byte[idx];
                         Array.Copy(rxPacket, p, idx);
-                        Packet client_packet = new Packet();
+                        Packet client_packet = new Packet(isNewPacket:true);
                         client_packet.setPacket(p);
                         this.Invoke(tb1, new object[] { "OK: packet=" + client_packet.toHexString() });
 
@@ -507,7 +507,9 @@ namespace MySocketServer
                     sp3.init_SERVER_P3(packet_cnt++, client_packet.getPCK_ID(), client_packet.getPCK_CNT(), more_data);
                     return sp3;
                 case 0x07:
-                    Packet sp4 = new Packet(); //TODO create new packet 07
+                    Packet sp4 = new Packet(); 
+                    byte[] more_data4 = new byte[5] { 0x01, 0x02, 0x03,0x04,0x05 };
+                    sp4.init_SERVER_P4(packet_cnt++, client_packet.getPCK_ID(), client_packet.getPCK_CNT(), more_data4);
                     return sp4;
                 default:
                     this.Invoke(tb2, new object[] { "UNKNOWN CLIENT PACKET ID" });

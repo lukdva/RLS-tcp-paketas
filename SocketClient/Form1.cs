@@ -114,7 +114,7 @@ namespace MySocketClient
 
             SendThread st = new SendThread(cp.getRawPacket(), this, this.textBoxIP.Text);
 
-            Thread t = new Thread(new ThreadStart(st.ThreadProc));
+            Thread t = new Thread(new ThreadStart(st.ThreadProc2));
             t.Start();
         }
 
@@ -296,6 +296,211 @@ namespace MySocketClient
                         byte[] p = new byte[idx];
                         Array.Copy(rxPacket, p, idx);
                         Packet server_packet = new Packet();
+                        server_packet.setPacket(p);
+                        form.Invoke(tb2, new object[] { "OK: packet=" + server_packet.toHexString() });
+                    }
+                    else
+                    {
+                        form.Invoke(tb2, new object[] { "RX failed" });
+                    }
+
+
+                    client.Close();
+
+                    form.Invoke(tb1, new object[] { "Closed" });
+
+                }
+                catch (Exception ex)
+                {
+                    form.Invoke(tb2, new object[] { ex.Message });
+                    client.Close();
+                }
+
+            }
+
+            public void ThreadProc2()
+            {
+                Form1.UpdateTextBox1Callback tb1 = new Form1.UpdateTextBox1Callback(form.updateTextBox1);
+                Form1.UpdateTextBox2Callback tb2 = new Form1.UpdateTextBox2Callback(form.updateTextBox2);
+
+                form.Invoke(tb1, new object[] { "sendPacketToServer() started" });
+                TcpClient client = new TcpClient();
+
+                try
+                {
+
+                    form.Invoke(tb1, new object[] { "Connecting..." });
+
+                    client.Connect(server_ip, 7777);
+
+                    Socket soc = client.Client;
+                    soc.SendTimeout = 10000;
+                    soc.ReceiveTimeout = 10000;
+                    soc.NoDelay = true;
+
+                    form.Invoke(tb1, new object[] { "Connected" });
+
+                    soc.Send(pck_data, pck_data.Length, 0);
+
+                    form.Invoke(tb1, new object[] { "Data sent, waiting for response..." });
+
+                    byte b = (byte)0x00;
+                    byte[] data = new byte[1];
+                    int bytes = 0;
+                    int counter = 0;
+                    uint sizeOfReceivingFrame = (ushort)0x00000000;
+                    ushort rxCRC = (ushort)0x0000;
+                    ushort crc = (ushort)0x0000;
+                    byte crc_hb = (byte)0x00;
+                    byte crc_lb = (byte)0x00;
+                    bool pck_error = false;
+                    bool rxOK = false;
+                    bool crc_error = false;
+                    bool end_error = false;
+                    bool rx_len_error = false;
+                    byte[] rxPacket = new byte[512];//cia tik atvaizdavimui reikalinga!
+                    int idx = 0;
+
+                    RX_STATE rxState = RX_STATE.WAIT_FOR_SYNC;
+
+                    while ((pck_error == false && rxOK == false && (bytes = soc.Receive(data, 1, 0)) > 0))
+                    {
+                        //this.Invoke(tb1, new object[] { "byte received, bytes_size=" + bytes });
+
+                        b = (byte)data[0];
+                        switch (rxState)
+                        {
+                            case RX_STATE.WAIT_FOR_SYNC:
+                                if (b == (byte)0x4c && counter == 0)
+                                {
+                                    counter++;
+                                    rxPacket[idx++] = b;
+                                }
+                                if (b == (byte)0x55 && counter == 1)
+                                {
+                                    counter++;
+                                    rxPacket[idx++] = b;
+                                }
+
+                                if (counter == 2)
+                                {
+                                    counter = 0;
+                                    rxState = RX_STATE.RX_LENGTH;
+                                }
+                                break;
+                            case RX_STATE.RX_LENGTH:
+                                counter++;
+
+                                if (counter != 4)
+                                {
+                                    sizeOfReceivingFrame = (uint)((sizeOfReceivingFrame << 8 * (counter - 1)) | b);
+                                    rxPacket[idx++] = b;
+                                    break;
+                                }
+
+                                sizeOfReceivingFrame = (ushort)((sizeOfReceivingFrame << 24) | b);
+                                sizeOfReceivingFrame -= 5;// atmetam CRC ir END
+                                if (sizeOfReceivingFrame <= 0)
+                                {
+                                    pck_error = true;
+                                    rx_len_error = true;
+                                    form.Invoke(tb1, new object[] { "RX_STATE.RX_LENGTH: pck_error" });
+                                    break;
+                                }
+                                rxPacket[idx++] = b;
+                                counter = 0;
+                                rxState = RX_STATE.RX_DATA;
+                                break;
+                            case RX_STATE.RX_DATA:
+                                rxPacket[idx++] = b;
+                                counter++;
+                                if (counter == sizeOfReceivingFrame)
+                                {
+                                    counter = 0;
+                                    rxState = RX_STATE.RX_CRC;
+                                    break;
+                                }
+                                break;
+                            case RX_STATE.RX_CRC:
+                                counter++;
+                                if (counter == 1)
+                                {
+                                    crc_hb = b;
+                                    rxPacket[idx++] = b;
+                                    break;
+                                }
+
+                                if (counter == 2)
+                                {
+                                    crc_lb = b;
+                                    rxPacket[idx++] = b;
+                                    counter = 0;
+
+                                    crc = (ushort)((crc_hb << 8) | crc_lb);
+
+                                    rxCRC = calcCRC(rxPacket, idx);
+
+                                    if (crc != rxCRC)
+                                    {
+                                        form.Invoke(tb1, new object[] { "BAD CRC: calcCRC=" + word2hexstr(rxCRC) + " | crc=" + word2hexstr(rxCRC) });
+                                        form.Invoke(tb1, new object[] { "packet: " + toHexString(rxPacket) });
+                                        pck_error = true;
+                                        crc_error = true;
+                                    }
+                                    else
+                                    {
+                                        counter = 0;
+                                        rxState = RX_STATE.RX_END;
+                                    }
+
+                                    break;
+                                }
+                                break;
+                            case RX_STATE.RX_END:
+                                counter++;
+                                bool isEndingValid = true;
+                                switch (counter)
+                                {
+                                    case (1):
+                                        if (b != (byte)0x44)
+                                            isEndingValid = false;
+                                        break;
+                                    case (2):
+                                        if (b != (byte)0x56)
+                                            isEndingValid = false;
+                                        break;
+                                    case (3):
+                                        if (b != (byte)0x41)
+                                            isEndingValid = false;
+                                        break;
+                                }
+
+                                if (isEndingValid == false)   // discard
+                                {
+                                    form.Invoke(tb1, new object[] { "MISSING END! ..." });
+                                    form.Invoke(tb1, new object[] { "packet discarded: " + toHexString(rxPacket) });
+                                    pck_error = true;
+                                    end_error = true;
+                                }
+                                else
+                                {
+                                    //this.Invoke(tb1, new object[] { "rxOK! ..." });
+                                    rxPacket[idx++] = b;
+                                    if (counter == 3)
+                                        rxOK = true;
+                                }
+
+                                // 
+
+                                break;
+                        }
+                    }
+
+                    if (rxOK == true)
+                    {
+                        byte[] p = new byte[idx];
+                        Array.Copy(rxPacket, p, idx);
+                        Packet server_packet = new Packet(isNewPacket:true);
                         server_packet.setPacket(p);
                         form.Invoke(tb2, new object[] { "OK: packet=" + server_packet.toHexString() });
                     }
